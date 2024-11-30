@@ -14,7 +14,7 @@ function AddExp() {
   const navigate = useNavigate();
 
   if (!token) {
-    navigate("/loading");
+    navigate("/login");
   }
   useEffect(() => {
     const fetchExpenses = async () => {
