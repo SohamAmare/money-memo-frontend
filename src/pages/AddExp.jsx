@@ -13,6 +13,7 @@ function AddExp() {
   const [render, setRender] = useState(false);
   const navigate = useNavigate();
 
+  console.log(token);
   if (!token) {
     navigate("/login");
   }
