@@ -1,0 +1,33 @@
+{
+  "name": "Money-Memo - A web application for managing expenses.",
+  "short_name": "Money-Memo",
+  "icons": [
+    {
+      "src": "/src/assets/img1.jpg",
+      "type": "image/jpg",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/src/assets/img2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/src/assets/img3.png",
+      "type": "image/png",
+      "sizes": "320x320",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/src/assets/img3.png",
+      "type": "image/png",
+      "sizes": "320x320",
+      "form_factor": "narrow"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
