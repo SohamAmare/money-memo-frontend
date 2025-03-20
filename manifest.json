@@ -1,6 +1,7 @@
 {
   "name": "Money-Memo - A web application for managing expenses.",
   "short_name": "Money-Memo",
+  "start_url": "/",
   "icons": [
     {
       "src": "/img1.jpg",
@@ -27,7 +28,6 @@
       "form_factor": "narrow"
     }
   ],
-  "start_url": "/index.html",
   "display": "fullscreen",
   "orientation": "portrait"
 }
