@@ -1,6 +1,6 @@
 const cacheName = "MyCache1";
 
-const urlList = ["index.html", "/img1.jpg", "/img2.jpg", "/img3.jpg"];
+const urlList = ["index.html", "/img1.png", "/img2.png", "/img3.png"];
 self.addEventListener("install", (event) => {
   event.waitUntill(
     caches.open(cacheName).then((cache) => {
