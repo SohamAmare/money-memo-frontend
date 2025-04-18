@@ -53,7 +53,7 @@ const VoiceCommands = () => {
   const handleCommand = (command) => {
     if (command.toLowerCase().includes("add expense")) {
       alert("You said: Add Expense");
-      navigate("/");
+      navigate("/addExp");
     } else if (command.toLowerCase().includes("track expense")) {
       alert("You said: Track Expense");
       navigate("/expense-tracker");
