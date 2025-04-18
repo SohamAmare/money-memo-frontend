@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const ExpenseItem = ({ expense }) => {
+const ExpenseItem = ({ expense, fetchMethod }) => {
   const handleDelete = async () => {
     try {
       await axios.delete(
