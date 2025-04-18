@@ -15,7 +15,7 @@ const ExpenseItem = ({ expense }) => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 mb-4 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-white shadow-md rounded-lg p-4 mb-4 ">
       <h4 className="text-xl font-semibold text-gray-800">
         {expense.description}
       </h4>
