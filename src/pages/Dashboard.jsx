@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("authToken"); // Assuming token is stored in localStorage
-    navigate("/login"); // Navigate to login page on logout
+    navigate("/loading"); // Navigate to login page on logout
   };
 
   const handleAddExpense = () => {

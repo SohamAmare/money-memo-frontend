@@ -78,8 +78,10 @@ const RegisterForm = () => {
         password,
       });
 
-      alert("User registered successfully! You can now log in.");
-      navigate("/login");
+      alert("User registered successfully!");
+      // alert("User registered successfully! You can now log in.");
+      navigate("/dashboard");
+      // navigate("/login");
       setName("");
       setEmail("");
       setPassword("");
