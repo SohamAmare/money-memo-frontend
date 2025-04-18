@@ -23,17 +23,14 @@ function AddExpenseForm(props) {
     };
 
     try {
-      const res = await fetch(
-        "https://money-memo-api.vercel.app/api/expenses/add",
-        {
-          method: "post",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify(newExpense),
-        }
-      );
+      const res = await fetch("https://money-memo-api.vercel.app/api/add", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(newExpense),
+      });
 
       alert("Expense added successfully!");
       props.setRender(!props.render);

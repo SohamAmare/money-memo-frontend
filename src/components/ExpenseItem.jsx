@@ -5,7 +5,7 @@ const ExpenseItem = ({ expense }) => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `https://money-memo-api.vercel.app/api/expenses/delete/${expense._id}`
+        `https://money-memo-api.vercel.app/api/delete/${expense._id}`
       );
       alert("Expense deleted!");
     } catch (err) {

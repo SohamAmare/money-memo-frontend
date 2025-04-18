@@ -26,7 +26,7 @@ function AddExp() {
     const fetchExpenses = async () => {
       try {
         const res = await axios.get(
-          "https://money-memo-api.vercel.app/api/expenses/all",
+          "https://money-memo-api.vercel.app/api/all",
           {
             headers: {
               Authorization: `Bearer ${token}`,
