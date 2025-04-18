@@ -22,22 +22,19 @@ function AddExp() {
     }
   }, []);
 
+  const fetchExpenses = async () => {
+    try {
+      const res = await axios.get("https://money-memo-api.vercel.app/api/all", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setExpenses(res.data);
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
   useEffect(() => {
-    const fetchExpenses = async () => {
-      try {
-        const res = await axios.get(
-          "https://money-memo-api.vercel.app/api/all",
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-        setExpenses(res.data);
-      } catch (err) {
-        console.log(err.message);
-      }
-    };
     fetchExpenses();
   }, [render]);
 
@@ -62,7 +59,11 @@ function AddExp() {
             </h2>
             {expenses && expenses.length > 0 ? (
               expenses.map((expense) => (
-                <ExpenseItem key={expense._id} expense={expense} />
+                <ExpenseItem
+                  fetchMethod={fetchExpenses}
+                  key={expense._id}
+                  expense={expense}
+                />
               ))
             ) : (
               <p className="text-gray-500">No expenses to show.</p>

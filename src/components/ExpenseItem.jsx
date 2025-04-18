@@ -8,6 +8,7 @@ const ExpenseItem = ({ expense }) => {
         `https://money-memo-api.vercel.app/api/delete/${expense._id}`
       );
       alert("Expense deleted!");
+      expense.fetchMethod();
     } catch (err) {
       console.log(err.message);
     }
