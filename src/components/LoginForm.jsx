@@ -73,7 +73,7 @@ function LoginForm() {
 
     try {
       const res = await axios.post(
-        "https://money-memo-api.vercel.app/api/login",
+        "https://money-memo-api.vercel.app/api/user/login",
         {
           email,
           password,

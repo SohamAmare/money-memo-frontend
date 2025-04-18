@@ -72,7 +72,7 @@ const RegisterForm = () => {
     e.preventDefault();
 
     try {
-      await axios.post("https://money-memo-api.vercel.app/api/register", {
+      await axios.post("https://money-memo-api.vercel.app/api/user/register", {
         name,
         email,
         password,

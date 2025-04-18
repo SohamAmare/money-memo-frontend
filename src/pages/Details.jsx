@@ -53,6 +53,7 @@ const Details = () => {
 
     try {
       // Send form data to backend
+      console.log(formData);
       await axios.post("https://money-memo-api.vercel.app/api/split", formData);
       alert("Split Saved!");
       navigate("/past-splits");
@@ -158,7 +159,8 @@ const Details = () => {
             <div className="flex justify-center">
               {/* <Link to={"/past-splits"}> */}
               <button
-                navigate={"/past-splits"}
+                // navigate={"/past-splits"}
+                onClick={handleSubmit}
                 type="submit"
                 className="bg-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-4 focus:ring-teal-300"
                 disabled={
