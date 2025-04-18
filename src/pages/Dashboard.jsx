@@ -11,7 +11,7 @@ const Dashboard = () => {
   };
 
   const handleAddExpense = () => {
-    navigate("/"); // Navigate to add expense form
+    navigate("/addExp"); // Navigate to add expense form
   };
 
   return (

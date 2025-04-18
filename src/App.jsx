@@ -20,7 +20,7 @@ function App() {
         {/* Loading page path, used initially for redirect */}
         <Route path="/loading" element={<Loading />} />
         <Route path="/" element={<Dashboard />} />
-        {/* <Route path="/" element={<AddExp />} /> */}
+        <Route path="/addExp" element={<AddExp />} />
         <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Other routes */}
